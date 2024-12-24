@@ -1,0 +1,39 @@
+# README.md
+# Word Frequency Analyzer
+A simple Python tool that analyzes word frequencies in Microsoft Word documents and generates a bar chart visualization.
+
+## Features
+- Reads .docx files
+- Generates bar chart of most common words
+- Excludes small words and numbers
+- Saves chart as PNG
+
+## Installation
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+```bash
+python word_analyzer.py path/to/document.docx
+```
+
+## Example Output
+The script will generate a bar chart showing the 20 most frequently used words in your document.
+
+---
+
+# .gitignore
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+*.png
+venv/
+env/
+
+---
+
+# requirements.txt
+python-docx==0.8.11
+matplotlib==3.7.1
